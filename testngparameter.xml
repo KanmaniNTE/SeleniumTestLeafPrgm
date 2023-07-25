@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="create lead">
+<listeners>
+<listener class-name="week6.day2.RetryListener"></listener>
+</listeners>
+<parameter name="url" value="http://leaftaps.com/opentaps/control/main"> </parameter>
+<parameter name="username" value="demosalesmanager"> </parameter>
+<parameter name="password" value="crmsfa"> </parameter>
+  <test thread-count="2" parallel="classes" name="specificpgm">
+    <classes>
+      <class name="week6.day2.EditLeadone"/>
+      <class name="week6.day2.CreateLeadTwo"/>
+    </classes>
+  </test> <!-- specificpgm -->
+</suite> <!-- create lead -->

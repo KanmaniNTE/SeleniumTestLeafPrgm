@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [SalesFor]" guice-stage="DEVELOPMENT" verbose="5">
+  <test thread-count="5" parallel="classes" name="TestNGtcs(failed)" verbose="5">
+    <classes>
+      <class name="week6.day2.SalesforceNew">
+        <methods>
+          <include name="Customer"/>
+          <include name="setData"/>
+          <include name="setUp"/>
+          <include name="tearOut"/>
+        </methods>
+      </class> <!-- week6.day2.SalesforceNew -->
+      <class name="week6.day2.Saleforceinedge">
+        <methods>
+          <include name="Individuals"/>
+          <include name="setData"/>
+          <include name="setUp"/>
+          <include name="tearOut"/>
+        </methods>
+      </class> <!-- week6.day2.Saleforceinedge -->
+    </classes>
+  </test> <!-- TestNGtcs(failed) -->
+</suite> <!-- Failed suite [SalesFor] -->
